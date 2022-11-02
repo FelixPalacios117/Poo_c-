@@ -99,5 +99,6 @@ void Celulares::mostrar()
     cout << "Codigo: " << codigo << endl;
     cout << "Marca: " << marca << endl;
     cout << "Modelo: " << modelo << endl;
-    cout << "precio: " << precio << endl; 
+    cout << "Precio: $" << precio << endl;
+    cout << "Stock: "<<stock<<endl; 
 }

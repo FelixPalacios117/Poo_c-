@@ -2,16 +2,15 @@
 #include <string.h>
 #include "clases/clase.h"
 using namespace std;
-int main()
-{
+
+void agregarCelulares(){
     int n; 
     int codigo;
     string marca;
     string modelo;
     double precio;
     int stock;
-
-   cout<< "Ingrese la cantidad de objetos: "<<endl;
+    cout<< "Ingrese la cantidad de objetos: "<<endl;
       cin>>n;
 
       Celulares *listaCelulares[n];
@@ -39,6 +38,16 @@ int main()
       for(int i=0; i<n; i++){
           listaCelulares[i]->mostrar();
       } 
-
+}
+int main()
+{
+   //Que sucede con el código?
+   Celulares objeto;
+   objeto.setMarca("Samsung"); 
+   objeto.setModelo("A52");
+   objeto.setPrecio(1259.22);
+   objeto.mostrar(); 
+   //Arreglo de objetos
+   agregarCelulares(); 
     return 0;
 }
